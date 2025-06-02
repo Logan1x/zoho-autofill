@@ -1,0 +1,19 @@
+{
+	"manifest_version": 3,
+	"name": "Zoho Timesheet Auto-Fill",
+	"version": "1.0",
+	"description": "Automatically fill Zoho timesheet entries with 09:00 for working days",
+	"permissions": ["activeTab", "scripting"],
+	"host_permissions": ["https://peopleplus.zoho.in/*"],
+	"action": {
+		"default_popup": "popup.html",
+		"default_title": "Fill Zoho Timesheet"
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://peopleplus.zoho.in/*/zp*timetracker*"],
+			"js": ["content.js"],
+			"run_at": "document_idle"
+		}
+	]
+}
