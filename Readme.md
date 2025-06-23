@@ -14,6 +14,9 @@ A Chrome extension that helps automate the process of filling Zoho timesheets. T
 - Month selection support
 - Visual status updates
 
+## Watch Demo video
+[![Watch the video](https://cdn.loom.com/sessions/thumbnails/f7999761fa59403a8f78d12720b943b6-b73bcdec73ecfa5c-full-play.gif)](https://www.loom.com/share/f7999761fa59403a8f78d12720b943b6?sid=2ab36575-7adc-48e9-8aee-9fde95195e39)
+
 ## Installation
 
 Since this extension is not available on the Chrome Web Store, you'll need to install it manually:
