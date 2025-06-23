@@ -1,19 +1,29 @@
 {
-	"manifest_version": 3,
-	"name": "Zoho Timesheet Auto-Fill",
-	"version": "1.0",
-	"description": "Automatically fill Zoho timesheet entries with 09:00 for working days",
-	"permissions": ["activeTab", "scripting"],
-	"host_permissions": ["https://peopleplus.zoho.in/*"],
-	"action": {
-		"default_popup": "popup.html",
-		"default_title": "Fill Zoho Timesheet"
-	},
-	"content_scripts": [
-		{
-			"matches": ["https://peopleplus.zoho.in/*/zp*timetracker*"],
-			"js": ["content.js"],
-			"run_at": "document_idle"
-		}
-	]
+  "manifest_version": 3,
+  "name": "Autofill Timesheet",
+  "version": "1.0",
+  "description": "Automatically fill Zoho timesheet entries with 09:00 for working days",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["https://peopleplus.zoho.in/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Fill Timesheet",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://peopleplus.zoho.in/*/zp*timetracker*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
 }
