@@ -43,3 +43,7 @@ The extension requires the following permissions:
 - `activeTab`: To interact with the timesheet page
 - `scripting`: To execute the filling script
 - Access to `https://peopleplus.zoho.in/*`: To work with Zoho's timesheet system
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
